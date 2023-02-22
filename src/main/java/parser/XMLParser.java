@@ -124,7 +124,8 @@ public class XMLParser {
     private String getTagName() {
         String tagName = "";
         //read tag name
-        while (currentParsingPosition < document.length() && document.charAt(currentParsingPosition) != '>' && document.charAt(currentParsingPosition) != ' ' && document.charAt(currentParsingPosition) != '/') {
+        while (currentParsingPosition < document.length() && document.charAt(currentParsingPosition) != '>'
+                && document.charAt(currentParsingPosition) != ' ' && document.charAt(currentParsingPosition) != '/') {
             tagName +=document.charAt(currentParsingPosition);
             currentParsingPosition++;
         }
